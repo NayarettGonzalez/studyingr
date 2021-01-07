@@ -5,7 +5,7 @@ date: "1/6/2021"
 output: html_document
 ---
 
-# Tipos de datos en R
+# TIPOS DE DATOS EN R
 
 ```{r}
 b <- TRUE
@@ -30,4 +30,73 @@ class(c)
 ca <- "TRUE"
 class(ca)
 ```
+
+# R-OBJECTS
+
+# VECTORES
+
+## Creando un vector
+
+```{r}
+colores <- c("rojo","verde","blue")
+colores
+```
+```{r}
+class(colores)
+```
+
+# LISTAS
+## Creando una lista
+
+```{r}
+lista1 <-list(c(3,4,5),23.4, sin)
+lista1
+```
+# MATRICES
+
+Una matriz es un conjunto rectangular de dos dimensiones. Puede ser creada a partir de un vector como input utilizando la función __matrix()__
+
+```{r}
+numeros <- c(1:10)
+matriz <- matrix(numeros)
+matriz
+```
+Por defecto los valores del vector son ingresados por columnas en la matriz
+
+```{r}
+matriz1 <- matrix(numeros, nrow = 2)
+matriz1
+```
+
+Se puede especificar el ingreso de los valores por fila
+
+```{r}
+matriz2 <- matrix(numeros, nrow = 2, byrow = TRUE)
+matriz2
+
+```
+
+También podemos especificar el número de filas, columnas e indicar si queremos ingresar los valores por filas o columnas
+
+```{r}
+matriz3 <- matrix(numeros, nrow = 2, ncol = 5, byrow = TRUE)
+matriz3
+```
+
+Al ingresar un números mayor que la cantidad de elementos correspondiente a la dimensión de la matriz, obtenemos un mensaje y sólo se consideran los que completan la matriz
+
+```{r}
+matriz4 <- matrix(c(1:11), nrow = 2, ncol = 5, byrow = TRUE)
+matriz4
+```
+
+
+```{r}
+matriz5 <- matrix(c(1:11), nrow = 2, ncol = 8, byrow = TRUE)
+matriz5
+```
+
+# ARREGLOS
+
+```{r}
 

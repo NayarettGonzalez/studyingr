@@ -1,0 +1,33 @@
+---
+title: "Tipos de datos en R"
+author: "Nayarett González"
+date: "1/6/2021"
+output: html_document
+---
+
+# Tipos de datos en R
+
+```{r}
+b <- TRUE
+class(b)
+```
+```{r}
+r <- 23.5
+class(r)
+```
+
+```{r}
+i<- 2L
+class(i)
+```
+
+```{r}
+c<-2+5i
+class(c)
+```
+
+```{r}
+ca <- "TRUE"
+class(ca)
+```
+

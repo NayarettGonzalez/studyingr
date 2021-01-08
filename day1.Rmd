@@ -98,5 +98,6 @@ matriz5
 
 # ARREGLOS
 
+Los arreglos en R
 ```{r}
 

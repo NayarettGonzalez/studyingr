@@ -470,6 +470,24 @@ matriz3</code></pre>
 </div>
 <div id="arreglos" class="section level1">
 <h1>ARREGLOS</h1>
+<p>Los arreglos pueden ser de cualquier número de dimensiones.</p>
+<p>La función array <strong>array()</strong> toma el atributo <strong>dim</strong> el cual crea el número requerido de dimensiones.</p>
+<p>El siguiente es un arreglo con dos elementos los cuales son matrices de 3x3 cada uno</p>
+<pre class="r"><code>arreglo &lt;- array(c(&#39;verde&#39;, &#39;azul&#39;), dim = c(3,3,2))
+arreglo</code></pre>
+<pre><code>## , , 1
+## 
+##      [,1]    [,2]    [,3]   
+## [1,] &quot;verde&quot; &quot;azul&quot;  &quot;verde&quot;
+## [2,] &quot;azul&quot;  &quot;verde&quot; &quot;azul&quot; 
+## [3,] &quot;verde&quot; &quot;azul&quot;  &quot;verde&quot;
+## 
+## , , 2
+## 
+##      [,1]    [,2]    [,3]   
+## [1,] &quot;azul&quot;  &quot;verde&quot; &quot;azul&quot; 
+## [2,] &quot;verde&quot; &quot;azul&quot;  &quot;verde&quot;
+## [3,] &quot;azul&quot;  &quot;verde&quot; &quot;azul&quot;</code></pre>
 </div>
 
 

@@ -98,6 +98,13 @@ matriz5
 
 # ARREGLOS
 
-Los arreglos en R
-```{r}
+Los arreglos pueden ser de cualquier número de dimensiones.
 
+La función array __array()__ toma el atributo __dim__ el cual crea el número requerido de dimensiones.
+
+El siguiente es un arreglo con dos elementos los cuales son matrices de 3x4 cada uno
+
+```{r}
+arreglo <- array(c('verde', 'azul'), dim = c(3,4,2))
+arreglo
+```

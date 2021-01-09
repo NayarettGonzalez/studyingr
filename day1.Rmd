@@ -108,3 +108,30 @@ El siguiente es un arreglo con dos elementos los cuales son matrices de 3x4 cada
 arreglo <- array(c('verde', 'azul'), dim = c(3,4,2))
 arreglo
 ```
+
+# FACTORS
+
+Estos se crean usando un vector cuyos valores son almacenados como etiquetas.
+
+Las etiquetas son siempre caracteres independientemente del tipo que se encuentre en el vector.
+
+__Estos son útiles en modelamiento estadístico.__
+
+```{r}
+# Creando un factor
+
+factor_colores <- factor(c('verde','rojo','verde', 'amarillo', 'azul','azul','verde'))
+factor_colores
+```
+
+```{r}
+levels(factor_colores)
+```
+
+Para conocer la cantidad de niveles utilizamos __nlevels__
+
+```{r}
+nlevels(factor_colores)
+```
+
+
